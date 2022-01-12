@@ -1,12 +1,24 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView, TouchableWithoutFeedback, Image } from 'react-native';
 
 export default function App() {
+ 
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+    // View => UIView IOS
+    <SafeAreaView style={styles.container}>
+      <Text>Lets get this money!!</Text>
+      <TouchableWithoutFeedback>
+        {/* <Image source={{
+          width: 200,
+          height: 300,
+          uri: ""
+        }}>
+
+        </Image> */}
+
+      </TouchableWithoutFeedback>
       <StatusBar style="auto" />
-    </View>
+    </SafeAreaView>
   );
 }
 
