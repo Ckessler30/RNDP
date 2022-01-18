@@ -13,8 +13,8 @@ export default function App() {
  
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName='Home' options={{headerShown: 'false'}}>
-        <Stack.Screen name='Home' component={WelcomeScreen}/>
+      <Stack.Navigator initialRouteName='Home' screenOptions={{headerShown: false}}>
+        <Stack.Screen name='Home' component={WelcomeScreen} />
         <Stack.Screen name="Pictures" component={ViewImageScreen}/>
       </Stack.Navigator>
     </NavigationContainer>

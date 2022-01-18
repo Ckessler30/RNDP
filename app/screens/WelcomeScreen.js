@@ -1,5 +1,16 @@
 import React from 'react';
-import { Button, Image, ImageBackground, StyleSheet, Text, View } from 'react-native';
+import {
+  Button,
+  Image,
+  ImageBackground,
+  StyleSheet,
+  Text,
+  View,
+  TouchableHighlight,
+  TouchableOpacity,
+} from "react-native";
+import Icon from "react-native-vector-icons/FontAwesome";
+
 
 import colors from '../config/colors'
 
@@ -15,15 +26,21 @@ function WelcomeScreen(props) {
           source={{
             uri: "https://cdn.discordapp.com/attachments/908486747506221059/933028389114249236/35257.png",
           }}
-          style={{width: 150, height: 150, marginTop: 120}}
+          style={{ width: 150, height: 150, marginTop: 120 }}
         ></Image>
         <View style={styles.container}>
-          <Button title="Log In" style={styles.loginButton} onPress={() => props.navigation.navigate('Pictures')}>
-              {/* <Text>Log In</Text> */}
-          </Button>
-          <View style={styles.signUp}>
-              <Text>Sign Up</Text>
-          </View>
+          <TouchableOpacity
+            style={styles.loginButton}
+            onPress={() => props.navigation.navigate("Pictures")}
+          >
+            <Text>Log In</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.signUp}
+            onPress={() => props.navigation.navigate("Pictures")}
+          >
+            <Text>Sign Up</Text>
+          </TouchableOpacity>
         </View>
       </ImageBackground>
     );
