@@ -17,7 +17,7 @@ export default function ViewImageScreen(props) {
             <Icon name="chevron-circle-left" size={50} color={colors.primary} />
             </TouchableHighlight>
             <TouchableHighlight
-            onPress={() => console.log("Delete")}
+            onPress={() => console.log("Deleted Picture")}
             >
             <Icon name="minus-circle" size={50} color={colors.secondary} />
             </TouchableHighlight>
